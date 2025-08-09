@@ -1,13 +1,16 @@
-export interface ButtonProps{
-    variant: "primary" | "secondary";
+import { ReactElement } from "react"; 
+
+type Variants = "primary" | "secondary";
+interface ButtonProps{
+    variant: Variants;
     size: "sm" | "md" | "lg";
     text: string;
-    startIcon?: any;
-    endIcon?: any;
+    startIcon?: ReactElement;
+    endIcon?: ReactElement;
     onClick: () => void;
 }
 
-export const Button = (props: ButtonProps) {
+export const Button = (props: ButtonProps) => {
     
     return <button></button>
 }
