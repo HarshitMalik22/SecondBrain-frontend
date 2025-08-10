@@ -10,6 +10,7 @@ interface ButtonProps{
     onClick: () => void;
 }
 
+//Just mainatining this streak coz worked on some diffeerent project which cant be pushes rn
 export const Button = (props: ButtonProps) => {
     
     return <button></button>
