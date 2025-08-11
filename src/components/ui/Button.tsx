@@ -10,10 +10,13 @@ interface ButtonProps{
     onClick: () => void;
 }
 
-//Just mainatining this streak coz worked on some diffeerent project which cant be pushes rn
-export const Button = (props: ButtonProps) => {
-    
-    return <button></button>
+const variantStyles = {
+    "primary": "bg-purple-600",
+    "secondary": "bg-purple-400 text-purple-600"
 }
 
-<Button endIcon={"+"} variant ="primary" size="md" onClick={() => {}} text = {"asd"} startIcon = {"-"} />
+export const Button = (props: ButtonProps) => {
+    return <button className={variantStyles[props.variant]}></button>
+}
+
+<Button variant ="primary" size="md" onClick={() => {}} text = {"asd"} />
