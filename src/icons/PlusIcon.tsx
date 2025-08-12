@@ -1,13 +1,20 @@
-import { iconSizeVariants, type IconProps } from "./index";
+interface PlusIconProps{
+    size: "sm" | "md" | "lg";
+}
 
-export const PlusIcon = ({ size = 'lg' }: IconProps) => (
+const sizeVariants = {
+    "sm": "size-2",
+    "md": "size-4",
+    "lg": "size-6"
+}
+export const PlusIcon = (props: PlusIconProps) => (
   <svg 
     xmlns="http://www.w3.org/2000/svg" 
     fill="none" 
     viewBox="0 0 24 24" 
     strokeWidth="1.5" 
     stroke="currentColor" 
-    className={iconSizeVariants[size]}
+    className={sizeVariants[props.size]}
   >
     <path 
       strokeLinecap="round" 
