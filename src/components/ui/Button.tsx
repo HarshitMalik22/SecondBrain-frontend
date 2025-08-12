@@ -16,21 +16,27 @@ const variantStyles = {
 }
 
 const sizeStyles = {
-    "sm": "px-3 py-1 text-sm",
-    "md": "px-4 py-2 text-base",
-    "lg": "px-6 py-3 text-lg"
+    "sm": "py-1 px-2",
+    "md": "px-4 py-2",
+    "lg": "px-6 py-4"
 }
 
-export const Button = (props: ButtonProps) => {
-    const { variant, size, text, startIcon, endIcon, onClick } = props;
+export const Button = ({
+    variant,
+    size,
+    text,
+    startIcon,
+    endIcon,
+    onClick
+}: ButtonProps) => {
     return (
         <button 
-            className={`rounded-md font-medium transition-colors ${variantStyles[variant]} ${sizeStyles[size]}`}
             onClick={onClick}
+            className={`rounded-md font-medium transition-colors ${variantStyles[variant]} ${sizeStyles[size]}`}
         >
             {startIcon && <span className="mr-2">{startIcon}</span>}
             {text}
             {endIcon && <span className="ml-2">{endIcon}</span>}
         </button>
-    )
+    );
 }
