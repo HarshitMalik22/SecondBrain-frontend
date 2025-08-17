@@ -1,4 +1,4 @@
-import { Button } from "./components/button"
+import { Button } from "./components/Button"
 import { PlusIcon } from "./icons/PlusIcon"
 import { ShareIcon } from "./icons/ShareIcon"
 
