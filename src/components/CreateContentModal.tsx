@@ -9,8 +9,21 @@ export function CreateContentModal({open, onClose}){
                     <div className="flex justify-end">
                         <CrossIcon />
                     </div>
+                    <div>
+                        <Input placeholder="Title" />
+                        <Input placeholder="Link" />
+                    </div>
+                    <div className="flex justify-center">
+                        <Button variant="primary" text="Submit" />
+                    </div>
                 </span>
             </div>
         </div>}
+    </div>
+}
+
+function Input ({onChange, placeholder}: {onChange: (e: React.ChangeEvent<HTMLInputElement>) => void, placeholder: string }) {
+    return <div>
+        <input placeholder = {placeholder} type={"text"} className="px-4 py-2 border rounded" onChange={onChange}></input>
     </div>
 }
