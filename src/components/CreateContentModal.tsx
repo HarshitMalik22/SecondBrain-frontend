@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CrossIcon } from "../icons/CrossIcon";
+import { Button } from "./Button";
 
 export function CreateContentModal({open, onClose}){
     return <div>
@@ -7,7 +8,9 @@ export function CreateContentModal({open, onClose}){
             <div className="flex flex-col justify-center">
                 <span className="bg-white opacity-100 p-4 rounded-lg">
                     <div className="flex justify-end">
-                        <CrossIcon />
+                        <div onClick={onClose}>
+                            <CrossIcon />
+                        </div>
                     </div>
                     <div>
                         <Input placeholder="Title" />
