@@ -7,7 +7,7 @@ export function Signup(){
             <Input placeholder="Username" />
             <Input placeholder="Password" />
             <div className="flex justify-center pt-4 ">
-                <Button variant="primary" text="Signup" />
+                <Button loading={false} variant="primary" text="Signup" fullWidth={true} />
             </div>
         </div>
     </div>
