@@ -5,11 +5,11 @@ export function SidebarItem({text, icon}:{
     icon: ReactElement;
 }
 ){
-    return <div className="flex text-gray-800 ">
-        <div className="p-2">
+    return <div className="flex text-gray-800 py-2">
+        <div className="pr-2">
             {icon}
         </div>
-        <div className="p-2">
+        <div>
             {text}
         </div>
     </div>
