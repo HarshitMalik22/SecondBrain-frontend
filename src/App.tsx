@@ -1,7 +1,7 @@
 import { Dashboard } from "./pages/dashboard";
 import { Signup } from "./pages/Signup";
 import { Signin } from "./pages/Signin";
-import { BrowserRouter as Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 function App(){
   return <BrowserRouter>
@@ -10,6 +10,6 @@ function App(){
       <Route path="/signin" element={<Signin />} />
       <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
-    </BrowserRouter>
+  </BrowserRouter>
 }
 export default App;
